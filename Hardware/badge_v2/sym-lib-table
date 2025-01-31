@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "badge_symbols")(type "KiCad")(uri "${KIPRJMOD}/../lib/symbols/badge_symbols.kicad_sym")(options "")(descr ""))
+  (lib (name "W25Q16JVUXIQ_TR")(type "KiCad")(uri "${KIPRJMOD}/../lib/symbols/W25Q16JVUXIQ_TR.kicad_sym")(options "")(descr ""))
+  (lib (name "PE4259-63")(type "KiCad")(uri "${KIPRJMOD}/../lib/symbols/PE4259-63.kicad_sym")(options "")(descr ""))
+  (lib (name "USBLC6-2SC6")(type "KiCad")(uri "${KIPRJMOD}/../lib/symbols/USBLC6-2SC6.kicad_sym")(options "")(descr ""))
+  (lib (name "SY8089A1AAC")(type "KiCad")(uri "${KIPRJMOD}/../lib/symbols/SY8089A1AAC.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,503 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "873aa92a-c356-468c-88f1-b24ea3bfbd4d")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 167.64 76.2) (xy 187.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e09baaf-23fe-4a73-8ace-a327caac48b9")
+	)
+	(wire
+		(pts
+			(xy 167.64 96.52) (xy 187.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f9790c1-640b-4e35-b37b-d2ff0c824bc3")
+	)
+	(wire
+		(pts
+			(xy 167.64 73.66) (xy 187.96 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f17ef90-8e6f-4c98-9968-a8f447c07da2")
+	)
+	(wire
+		(pts
+			(xy 167.64 81.28) (xy 187.96 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc85ac72-0d0c-4af7-85c5-8c34c60c00fb")
+	)
+	(bus
+		(pts
+			(xy 121.92 76.2) (xy 142.24 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ab7ab1-1812-4a5f-9c89-eb1696610ec7")
+	)
+	(wire
+		(pts
+			(xy 167.64 101.6) (xy 187.96 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c34bf976-c771-4b82-a3b3-2899bcba7684")
+	)
+	(wire
+		(pts
+			(xy 121.92 78.74) (xy 142.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d05935da-8eb4-4378-9f99-032bc85bd8f7")
+	)
+	(wire
+		(pts
+			(xy 167.64 99.06) (xy 187.96 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d58b4189-e44c-466f-8354-ae0a32021d81")
+	)
+	(bus
+		(pts
+			(xy 121.92 73.66) (xy 142.24 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e616f0a1-59d0-497c-b16c-1e371fbb9e03")
+	)
+	(wire
+		(pts
+			(xy 167.64 78.74) (xy 187.96 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e640f9-df47-48bd-8639-875be31033ac")
+	)
+	(sheet
+		(at 96.52 93.98)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "085f96b2-1525-4782-b84d-199f4d00e289")
+		(property "Sheetname" "Power"
+			(at 96.52 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 96.52 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "badge_v2"
+				(path "/873aa92a-c356-468c-88f1-b24ea3bfbd4d"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 187.96 71.12)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "16113699-8918-4b64-97cb-e97e0d035ee4")
+		(property "Sheetname" "LED Matrix"
+			(at 187.96 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_matrix.kicad_sch"
+			(at 187.96 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RCLK" input
+			(at 187.96 81.28 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f5cba1e8-3cdd-4497-8d33-1fc5a7a9be31")
+		)
+		(pin "DIN" input
+			(at 187.96 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a5ba19b2-9f8c-4669-8753-619ffbecb65d")
+		)
+		(pin "CLK" input
+			(at 187.96 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "dca4b33e-0d2c-459e-8d70-ed7620b492c2")
+		)
+		(pin "~{OE}" input
+			(at 187.96 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0f56106c-9a23-49bf-817f-a7f11d87b6b6")
+		)
+		(instances
+			(project "badge_v2"
+				(path "/873aa92a-c356-468c-88f1-b24ea3bfbd4d"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 187.96 93.98)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a22609e1-2038-490b-9edd-b3fba8f0ebb9")
+		(property "Sheetname" "LED Logo"
+			(at 187.96 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_logo.kicad_sch"
+			(at 187.96 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LOGO_I" input
+			(at 187.96 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8c713e02-4e98-4839-b842-0435a15fdf3d")
+		)
+		(pin "LOGO_H" input
+			(at 187.96 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1e62cda8-919b-4d10-bc76-df2ad3ec546f")
+		)
+		(pin "LOGO_C" input
+			(at 187.96 99.06 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7fb298c3-22a3-4770-878e-5b6754859998")
+		)
+		(instances
+			(project "badge_v2"
+				(path "/873aa92a-c356-468c-88f1-b24ea3bfbd4d"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 96.52 71.12)
+		(size 25.4 12.7)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b43ef52b-dd07-4774-9873-f2cac89ebf50")
+		(property "Sheetname" "Connectors"
+			(at 96.52 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 96.52 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{USB}" bidirectional
+			(at 121.92 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9541d1fb-fb1b-4052-a43a-5bf0efe72601")
+		)
+		(pin "RUN" output
+			(at 121.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c33339b3-75be-4780-8453-b1150fab3698")
+		)
+		(pin "GPIO[0..29]" bidirectional
+			(at 121.92 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b8b9193a-72c9-448d-9b42-4b9ebb808dca")
+		)
+		(instances
+			(project "badge_v2"
+				(path "/873aa92a-c356-468c-88f1-b24ea3bfbd4d"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 142.24 71.12)
+		(size 25.4 35.56)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e9969bfb-abe6-46c1-9ac5-9a6ae08f7213")
+		(property "Sheetname" "RP2040"
+			(at 142.24 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rp2040.kicad_sch"
+			(at 142.24 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "{USB}" bidirectional
+			(at 142.24 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5f1fb181-9c51-42c5-a758-b378e1c17f2d")
+		)
+		(pin "MAT_CLK" output
+			(at 167.64 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6fba6a76-bcd7-4456-b3fa-11c351347576")
+		)
+		(pin "MAT_DIN" output
+			(at 167.64 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "fa2dce1c-d14f-4b2c-b36b-9d7545963ec5")
+		)
+		(pin "MAT_RCLK" output
+			(at 167.64 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4c3f3456-8471-4104-8cac-28662afa7bb6")
+		)
+		(pin "MAT_~{OE}" output
+			(at 167.64 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "38f7f3f0-e6c8-4dd3-bac4-901c34a3baf8")
+		)
+		(pin "LOGO_C" output
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0de4043e-27af-475c-a636-3a40a543f470")
+		)
+		(pin "LOGO_I" output
+			(at 167.64 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "03e0ab84-cca6-40b1-b1a9-75c4bb0066db")
+		)
+		(pin "LOGO_H" output
+			(at 167.64 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "152e9063-be5d-4a42-8df1-68e406d402a2")
+		)
+		(pin "RUN" input
+			(at 142.24 78.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ec709416-db84-4143-a38d-1fb8435bb5bc")
+		)
+		(pin "GPIO[0..29]" bidirectional
+			(at 142.24 76.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "33a4792c-0c34-4d16-840b-8823ceaea64c")
+		)
+		(instances
+			(project "badge_v2"
+				(path "/873aa92a-c356-468c-88f1-b24ea3bfbd4d"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
