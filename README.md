@@ -4,7 +4,7 @@ Repository for how to use and program the IC Hack PCB badges. They are functiona
 
 Microcontrollers are small but flexible computers that are great at interacting with the real world. We hope that by giving everyone a powerful microcontroller like the RP2040, they are able to give embedded programming a go and make something cool!
 
-Kits of sensors and electronics are available from ICRS to help build whatever you have in mind. ICRS can also provide knowledge and help with any issues relating to hardware projects and the badges.
+Kits of sensors and electronics are available from ICRS to help build whatever you have in mind. ICRS can also provide knowledge and help with anything relating to hardware projects and the badges.
 
 ![hacker-front](/Images/hacker-front.png)
 
@@ -40,13 +40,25 @@ The functions of each pin are shown here from the back side.
 
 These pins can be connected to using standard Dupont 2.54mm jumper cables.
 
+There are also pins that connect to things internally on the board:
+
+| **Pin Number** | **Function**         |
+|----------------|----------------------|
+| 4              | Logo H               |
+| 5              | Logo C               |
+| 6              | Logo I               |
+| 15             | Display serial data  |
+| 16             | Display enable       |
+| 17             | Display serial clock |
+| 18             | Display latch        |
+
 ## Writing Code
 
 There are several ways of programming the board using either C/C++ or MicroPython.
 
-- [Arduino (recommended)](#arduino)
-- [VS Code & C/C++ SDK](#vs-code--cc-sdk)
+- [Arduino](#arduino)
 - [MicroPython](#micropython)
+- [VS Code & C/C++ SDK](#vs-code--cc-sdk)
 
 ### Arduino
 
@@ -76,14 +88,6 @@ You can then check out example code in `File > Examples > IC Hack Badge`, or sta
 
 To program the badge, put the board in [boot mode](#uploading-code--boot-mode) and select the port it is connected to through the same menu where you chose the current board. You may need to check the `Show all ports` box. Then press the upload arrow in the top left.
 
-### VS Code & C/C++ SDK
-
-The C/C++ SDK is the official way released by Raspberry Pi for programming the RP2040 microcontroller. It offers more depth and features than Arduino, but lacks Arduino's abstractions and libraries, that can make using it harder.
-
-Setting it up can be a bit more challenging than using Arduino too (especially on Windows), and we recommend following [Raspberry Pi's guides](https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html) if you want to do so.
-
-The firmware flashed to all the badges was written using the SDK, and can be found in the [/SDK](/SDK/) folder for reference. Sorry for the spaghetti, blame Haotian -_-
-
 ### MicroPython
 
 To use MicroPython first upload the interpreter to the badge using the [latest firmware from Raspberry Pi](https://micropython.org/download/rp2-pico/rp2-pico-latest.uf2), which you can upload using the instructions in [Uploading Code & Boot Mode](#uploading-code--boot-mode).
@@ -92,17 +96,7 @@ You can then connect to the serial port using a program such as PuTTY on Windows
 
 ![micropython_shell](/Images/micropython_shell.png)
 
-Here we are printing "Hello World" over USB, and then setting pin 4 high, which turns on the H LEDs on the badge's logo. The mapping of pins to their functions is shown below:
-
-| **Pin Number** | **Function**         |
-|----------------|----------------------|
-| 4              | Logo H               |
-| 5              | Logo C               |
-| 6              | Logo I               |
-| 15             | Display serial data  |
-| 16             | Display enable       |
-| 17             | Display serial clock |
-| 18             | Display latch        |
+Here we are printing "Hello World" over USB, and then setting pin 4 high, which turns on the H LEDs on the badge's logo. The mapping of pins to their functions is shown in the [Pinout](#pinout) section.
 
 You can use the [MicroPico](https://marketplace.visualstudio.com/items?itemName=paulober.pico-w-go) VS Code extension, or [Thonny](https://thonny.org/) to write programs that you can then upload to the badge.
 
@@ -110,6 +104,13 @@ See the [documentation by Raspberry Pi](https://www.raspberrypi.com/documentatio
 
 Currently there is no MicroPython code for writing to the LED matrix, but both the Arduino library and the default firmware have implementations in C++ that could be ported to Python.
 
+### VS Code & C/C++ SDK
+
+The C/C++ SDK is the official way released by Raspberry Pi for programming the RP2040 microcontroller. It offers more depth and features than Arduino, but lacks Arduino's abstractions and libraries, that can make using it harder.
+
+Setting it up can be a bit more challenging than using Arduino too (especially on Windows), and we recommend following [Raspberry Pi's guides](https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html) if you want to do so.
+
+The firmware flashed to all the badges was written using the C/C++ SDK, and can be found in the [/SDK](/SDK/) folder for reference. Sorry for the spaghetti, blame Haotian -_-
 
 ## Uploading Code & Boot Mode
 
