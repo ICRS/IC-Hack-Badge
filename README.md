@@ -44,6 +44,10 @@ There are also pins that connect to things internally on the board:
 
 | **Pin Number** | **Function**         |
 |----------------|----------------------|
+| 0              | Button Y             |
+| 1              | Button B             |
+| 2              | Button X             |
+| 3              | Button A             |
 | 4              | Logo H               |
 | 5              | Logo C               |
 | 6              | Logo I               |
