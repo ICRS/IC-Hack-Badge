@@ -140,9 +140,12 @@ void main() {
 
 This lowers the core voltage to 0.9V, and the core frequency to 18MHz which draws around 6mA. This was found to be a good balance of low power and stablility, however it means the USB is disabled since it requires a minimum of 48MHz.
 
+> [!NOTE]
+> The battery should last for well over 24 hours with the default firmware, so it can be left on for the whole hackathon.
+
 Using the pico extras repo in the C/C++ SDK (sadly not in Arduino) the chip can be put to sleep which only draws 0.7mA. You can find out more about pico_sleep [here](https://github.com/raspberrypi/pico-extras/tree/master).
 
-When running MicroPython the RP2040 consumes too much power, so you should use USB to power it.
+When running MicroPython the RP2040 consumes too much power for the battery, so you should use USB instead.
 
 ## Credits
 
